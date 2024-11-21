@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Mức Độ Ưu Tiên</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+            h1{
+                color : blue !important
+            }
+            h1#h1-id.h1-class{  /* id + class + tag */
+                color : yellow
+            }
+            #h1-id.h1-class{  /* id + class */
+                color : brown
+            }
+            #h1-id{          /* id */
+                color : purple
+            }
+            #h1-id{          /* equal specificity */
+                color : orange
+            }
+            .h1-class{       /* class */   
+                color : red
+            }
+            h1 {            /* tag */
+                color : black
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="h1-id" class="h1-class" style="color :chocolate !important"  > 
+            Hello</h1>                   <!-- inline -->
+        <p>Chuột phải --> Kiểm tra --> Kiểu (style) để xem</p>           
+    </body>
+</html>

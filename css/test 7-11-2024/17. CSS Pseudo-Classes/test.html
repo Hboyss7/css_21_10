@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Pseudo Classes</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+           
+        
+            .box{
+                height: 17vh;
+                width: 90%;
+                
+                border: 10px dashed green;
+                padding: 20px;
+                margin: 10px;
+                background: rgb(78, 165, 236)
+
+              
+               
+            }
+
+            .box1:hover{
+                background: red;
+            }
+                
+            
+
+            .box2:active{
+                background: orange;
+            }
+            
+            li:first-child{
+                color : red
+            }
+
+            li:last-child{
+                font-size: 30px
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <p>Hover Pseudo-classes</p>
+        <div class="box box1"></div>
+
+        <p>Active Pseudo-classes</p>
+        <div class="box box2"></div>
+
+        <p>First-child </p>
+        <ul class="box ">
+            <li>first-child </li>
+            <li>second-child </li>
+            <li>last-child </li>
+        </ul>
+
+        <p>Last-child </p>
+        <ol class="box">
+            <li>first-child </li>
+            <li>second-child </li>
+            <li>last-child </li>
+        </ol>
+    </body>
+</html>

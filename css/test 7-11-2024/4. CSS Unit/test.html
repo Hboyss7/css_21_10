@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test CSS Unit</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+            
+            .box1{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+
+            .box2{
+                width: 50%;
+                height: 100px; /* Lưu ý: chiều dọc ko giới hạn */
+                background-color: red;
+            }
+
+            html{
+               
+               font-size: 150px;
+            }
+
+
+           .box3{
+            width: 2rem;
+            height: 1rem;
+            background-color: pink;
+           }
+
+           body{
+            font-size: 75px;
+           }
+
+           .box4{
+            width: 2em;
+            height: 4em;
+            background-color: orange;
+           }
+           
+           .box5{
+            width: 100vw;
+            height: 50vh;
+            background-color: green;
+           }
+            
+           h1{
+                font-size: 32px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Tạo khối (1:1) bằng 100 px</h1>
+        <div class="box1"></div>
+
+        <h1>Tạo khối bằng % với chiều ngang = nửa khung hình</h1>
+        <div class="box2"></div>
+
+        <h1>Tạo khối (1:2) bằng Rem với font-size html = 150 px </h1>
+        <div class="box3"></div>
+        
+        <h1>Tạo khối (2:1) bằng em với font-size chứa nó gần nhất = 75 px</h1>
+        <div class="box4"></div>
+       
+        <h1>Tạo khối (1:2) bằng vw, vh</h1>
+        <div class="box5"></div>
+
+        <h1>hehe</h1>
+    </body>
+</html>

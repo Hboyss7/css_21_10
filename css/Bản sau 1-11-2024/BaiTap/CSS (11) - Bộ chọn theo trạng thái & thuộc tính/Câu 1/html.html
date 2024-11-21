@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>CSS (11) - Bộ chọn theo trạng thái & thuộc tính</title>
+
+    <style>
+      a {
+        font-size: 48px;
+        text-decoration: none;
+      }
+
+      a:link {
+        color: maroon;
+      }
+
+      a:visited {
+        color: gray;
+      }
+
+      a:focus {
+        color: maroon;
+        background-color: #ffd9d9;
+      }
+
+      a:hover {
+        color: maroon;
+        background-color: #ffd9d9;
+      }
+
+      a:active {
+        color: red;
+        background-color: #ffd9d9;
+      }
+
+      li:first-child {
+        color: red;
+      }
+
+      input:checked + label {
+        color: red;
+      }
+
+      input[type="checkbox"]:checked {
+        box-shadow: 0 0 0 3px hotpink;
+      }
+
+      p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        color: white;
+
+        background-color: #333;
+
+        border-radius: 2px;
+
+        font-size: 200%;
+
+        box-shadow: 3px 3px 0 yellow;
+
+        padding: 6px 3px;
+
+        margin-right: 5px;
+      }
+
+      p::before {
+        content: "Đọc thêm: ";
+
+        color: red;
+
+        font-weight: bold;
+      }
+      p::after {
+        content: "(Kết thúc)";
+
+        color: red;
+
+        font-weight: bold;
+      }
+
+      h1[title]
+      {
+        color: red
+      }
+
+      h1[title = "con gà" ]
+      {
+        color: yellow
+      }
+
+      h1[title  ~= "chim" ]
+      {
+        color: green
+      }
+
+      h1[title  ^= "chim" ]
+      {
+        color: brown
+      }
+
+      h1[title  |= "chim" ]
+      {
+        color: purple
+      }
+
+      h1[title  $= "non" ]
+      {
+        color: aqua
+      }
+
+      h1[title  *= "ó" ]
+      {
+        color: orange
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <a href="http://www.facebook.com/hboyss7">Link FB</a>
+
+    <p id="first-letter">1 số nội dung cần học để làm web front-end</p>
+
+    <ul>
+      <li>HTML</li>
+
+      <li>CSS</li>
+
+      <li>JS</li>
+
+      <li>React</li>
+    </ul>
+
+    <div>
+      <input type="checkbox" name="my-checkbox" id="opt-in" />
+
+      <label for="opt-in">Chọn</label>
+    </div>
+
+    <p>First-line <br />Second-line</p>
+
+    <h1 title="">h1 này có thuộc tính title thì có màu đỏ</h1>
+
+    <h1 title="con gà">h1 này có thuộc tính title là con gà thì có màu vàng</h1>
+
+    <h1 title="con chim lớn">h1 này có thuộc tính title chứa chữ chim thì có màu xanh</h1>
+
+    <h1 title="chim-bé">h1 này có thuộc tính title chứa chữ chim ở đầu, sau đó là dấu (-) thì có màu tím</h1>
+
+    <h1 title="chim bé">h1 này có thuộc tính title chứa chữ chim ở đầu thì có màu nâu</h1>
+
+    <h1 title="chim con non">h1 này có thuộc tính title chứa chữ non ở cuối thì có màu biển</h1>
+
+    <h1 title="chim con non nó ">h1 này có thuộc tính title có chứa chuỗi “ó” thì màu cam</h1>
+  </body>
+</html>

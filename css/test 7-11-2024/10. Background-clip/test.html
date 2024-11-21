@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Box-sizing</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+            html{
+                background-color:yellow;
+            }
+        
+            .box{
+                height: 150px;
+                width: 150px;
+                background-color:aqua;
+                border: 10px dashed green;
+                padding: 20px;
+                margin: 10px;
+                float: left;
+                background-clip: border-box; /* mặc định, k ghi cũng dc*/
+            }
+
+            .box1{
+                background-clip: padding-box;
+            }
+
+            .box2{
+                background-clip: content-box;
+            }
+
+            
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box box0">Đây là box mặc định</div>
+
+        <div class="box box1">Cũng là box nhưng màu đổ từ vùng padding</div>
+
+        <div class="box box2">Giong như trên nhưng màu đổ từ vùng content</div>
+    </body>
+</html>

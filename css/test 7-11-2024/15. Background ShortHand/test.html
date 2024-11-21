@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test background shortHand</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+           
+        
+            .box{
+                height: 70vh;
+                width: 90%;
+                
+                border: 10px dashed green;
+                padding: 20px;
+                margin: 10px;
+                
+
+              
+               
+            }
+
+            .box1{
+                background-image: url(https://photo.znews.vn/w1920/Uploaded/mdf_eioxrd/2021_07_06/2.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+              
+            }
+
+            .box2{
+                background: url(https://photo.znews.vn/w1920/Uploaded/mdf_eioxrd/2021_07_06/2.jpg)
+                            no-repeat center / contain ;
+            }
+            
+
+
+        </style>
+    </head>
+
+    <body>
+        <p>Normal</p>
+        <div class="box box1"></div>
+
+        <p>shortHand</p>
+        <div class="box box2"></div>
+
+        
+        
+
+    </body>
+</html>

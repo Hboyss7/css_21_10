@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test background-origin</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+            html{
+                background-color:aqua;
+            }
+        
+            .box{
+                height: 70vh;
+                width: 500px;
+                background-image: url(https://photo.znews.vn/w1920/Uploaded/mdf_eioxrd/2021_07_06/2.jpg);
+              
+                border: 10px dashed green;
+                padding: 20px;
+                margin: 10px;
+                
+
+                background-size: 100%;
+                background-repeat: no-repeat;
+                box-sizing: border-box;
+                background-origin: padding-box; /* Mặc định*/
+               
+            }
+
+            .box1{
+                background-origin: border-box;
+                
+            }
+
+            .box2{
+                background-origin: content-box;
+            }
+            .box2a{
+                
+                background-size: 500px; /* Kích thước ảnh là 500px nếu khung nhỏ quá sẽ mất ảnh*/
+            }
+
+            .box2b{
+                background-size: 500px; 
+                width: 560px; /* + 2padding + 2border*/
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <p>Đổ màu từ padding</p>
+        <div class="box box0"></div>
+
+        <p>Đổ màu từ border</p>
+        <div class="box box1"></div>
+
+        <p>Đổ màu từ content 1</p>
+        <div class="box box2 "></div>
+
+        <p>Đổ màu từ content 2</p>
+        <div class="box box2 box2a"></div>
+
+        <p>Đổ màu từ content 3</p>
+        <div class="box box2 box2b"></div>
+
+    </body>
+</html>
