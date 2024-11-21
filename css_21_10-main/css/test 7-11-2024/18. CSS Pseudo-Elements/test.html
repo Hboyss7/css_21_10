@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Pseudo Elements</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+           
+        
+            .box{
+                height: 30vh;
+                width: 90%;
+                
+                border: 10px dashed green;
+                padding: 20px;
+                margin: 10px;
+                background: rgb(78, 165, 236)
+               
+            }
+
+            .boxes{
+                width: 50px;
+                height: 50px;
+                background: black;
+                margin: 10px;
+
+                float: left; 
+            }
+            
+            .box1::before{
+                content: "before block";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background: red;
+                margin: 10px;
+
+                float: left; 
+            }    
+
+            .box2::after{
+                content: "after block";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                margin: 10px;
+
+                float: left; 
+            }  
+            
+            h1::first-letter{
+                font-size: 100px;
+            }
+
+            h1::first-line{
+                color: red
+            }
+
+            h1::selection{
+                background-color: pink;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <p>Before Pseudo-Elements</p>
+        <div class="box box1">
+            <div class ="boxes">1</div>
+            <div class ="boxes">2</div>
+            <div class ="boxes">3</div>
+
+        </div>
+
+        <p>After Pseudo-Elements</p>
+        <div class="box box1 box2">
+            <div class ="boxes">1</div>
+            <div class ="boxes">2</div>
+            <div class ="boxes">3</div>
+        </div>
+
+        <p>First-letter Pseudo-Elements</p>
+        <div class="box box3">
+            <h1>Hello</h1> 
+        </div>
+
+        <p>First-line Pseudo-Elements</p>
+        <div class="box box3">
+            <h1>Hello <br> Dòng 2</h1> 
+        </div>
+        
+        <p>Selection Pseudo-Elements</p>
+        <div class="box box3">
+            <h1>Hello xin chào</h1> 
+        </div>
+        
+    </body>
+</html>

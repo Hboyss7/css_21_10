@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Box-sizing</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+        
+            .box{
+                height: 150px;
+                width: 150px;
+                float: left;
+                background-color:aqua;
+                margin: 10px;
+                
+            }
+
+            .box1{
+                padding: 16px;
+                border: solid red;
+                box-sizing: border-box;
+            }
+
+            .op1{
+                box-sizing: unset;
+            }
+
+            
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box">Đây là box 150px </div>
+
+        <div class="box box1 op1">Cũng là box 150px nhưng có padding & border </div>
+
+        <div class="box box1 op2">Giong như trên nhưng có box-sizing</div>
+    </body>
+</html>

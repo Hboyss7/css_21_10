@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Background Size</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+            
+        
+            .box{
+                height: 50vh;
+                width: 100%;
+                background-image: url(https://photo.znews.vn/w1920/Uploaded/mdf_eioxrd/2021_07_06/2.jpg);
+                border: 10px solid red;
+              
+                background-repeat: no-repeat;
+                margin: 17px;
+            }
+
+            .box1{
+                background-size: 200px auto; /* khỏi auto cũng dc */
+                
+            }
+            
+            .box2{
+                background-size: contain;
+            }
+
+            .box3{
+                background-size: cover;
+            }
+
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+
+        <div class="box box1"></div>
+
+        <div class="box box2"></div>
+
+        <div class="box box3"></div>
+
+    </body>
+</html>

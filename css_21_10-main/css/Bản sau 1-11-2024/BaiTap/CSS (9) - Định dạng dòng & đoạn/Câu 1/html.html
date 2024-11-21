@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>CSS (9) - Định dạng dòng & đoạn</title>
+
+    <style>
+      body {
+        width: 500px;
+
+        margin-left: 50px;
+
+        border: 1px solid red;
+      }
+      p {
+        line-height: 2;
+      }
+
+      p {
+        line-height: 2em;
+      }
+
+      p {
+        line-height: 200%;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      div {
+        font-size: 15px;
+        width: 10em;
+        border: 1px solid red;
+      }
+
+      .div1 {
+        line-height: 1.1;
+      }
+
+      .div2 {
+        line-height: 1.1em;
+      }
+
+      p#doan1 {
+        text-indent: 2em;
+      }
+
+      p#doan2 {
+        text-indent: 25%;
+      }
+
+      p#doan3 {
+        text-indent: -35px;
+      }
+
+      p#doan4 {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: capitalize;
+        letter-spacing: 8px;
+        color: red;
+        text-shadow: -0.9em -0.9em 0.09em,
+                      0.5em 0.5em gray;
+                      
+        
+
+      }
+
+      p#doan5 {
+        text-align: left;
+        text-decoration: overline;
+        text-transform: lowercase;
+        word-spacing: 1.5em;
+        background-color: thistle;
+        color: #ba9eba;
+        text-shadow: -0.05em -0.05em 0.05em white,
+                      0.03em 0.03em 0.05em purple;
+                                  
+      }
+
+      p#doan6 {
+        text-align: right;
+        text-decoration: line-through;
+        text-transform: uppercase;
+        text-shadow: 0 0 .7em purple;
+      }
+      p#bulleted1{
+        display: list-item;
+
+        list-style-type: upper-alpha;
+        /* letter-spacing: 1.5em; */
+         
+      }
+
+      p#bulleted2{
+        display: list-item;
+
+        list-style-type: upper-alpha;
+        list-style-position: inside;
+        
+        /* word-spacing: 1.5em; */
+      }
+
+      p#bulleted3{
+
+        display: list-item;
+        list-style-image: url();
+        
+        list-style-type: circle;
+
+        list-style-position: inside;
+        
+        /* word-spacing: 1.5em; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Hihi jkgfdkjngjdffdssssssssssssss</p>
+
+    <p>bhkjskdnsjgfdgdfssssssssssssssssssssssssss</p>
+
+    <div class="div1">
+      <h1>Đoạn văn bản 1</h1>
+    </div>
+
+    <div class="div2">
+      <h1>Đoạn văn bản 2</h1>
+    </div>
+
+    <p id="doan1">
+      Giá trị của thuộc tính text-indent có thể là em, % hoặc px. Giá trị % được
+      tính dựa trên độ rộng (width) của phần tử cha. Giá trị -35px sẽ dịch
+      chuyển hàng đầu tiên về phía bên trái của đoạn.
+    </p>
+
+    <p id="doan2">
+      Giá trị của thuộc tính text-indent có thể là em, % hoặc px. Giá trị % được
+      tính dựa trên độ rộng (width) của phần tử cha. Giá trị -35px sẽ dịch
+      chuyển hàng đầu tiên về phía bên trái của đoạn.
+    </p>
+
+    <p id="doan3">
+      Giá trị của thuộc tính text-indent có thể là em, % hoặc px. Giá trị % được
+      tính dựa trên độ rộng (width) của phần tử cha. Giá trị -35px sẽ dịch
+      chuyển hàng đầu tiên về phía bên trái của đoạn.
+    </p>
+
+    <p id="doan4">teXt-aliGn: center</p>
+    
+    <p id="doan5">teXt-aliGn: left</p>
+
+    <p id="doan6">teXt-aliGn: right</p>
+
+    <p id="bulleted1">Bullet không có hiệu lực với Letter Spacing</p>
+
+    <p id="bulleted2">Bullet không có hiệu lực với Word Spacing có giá trị là em</p>
+  
+    <p id="bulleted3">Bullet Image</p>
+  </body>
+</html>

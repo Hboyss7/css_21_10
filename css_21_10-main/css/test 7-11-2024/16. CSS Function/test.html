@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test CSS Function</title>
+        <link rel="stylesheet" href="test.css">
+        <style>
+           
+        
+            .box{
+                height: 70vh;
+                width: 90%;
+                
+                border: 10px dashed green;
+                padding: 20px;
+                margin: 10px;
+                
+
+              
+               
+            }
+
+            .box1{
+                background: rgb(78, 165, 236)
+            }
+
+            .box2{
+                width: calc(70% + 170px/11);
+            }
+            
+            a::after{
+                content: attr(href) " :))";
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <p>Function rgb()</p>
+        <div class="box box1"></div>
+
+        <p>Function calc()</p>
+        <div class="box box2"></div>
+
+        <p>Function attr()</p>
+        <div class="box box3">
+            <a href="https://www.facebook.com/hboyss7">
+                Link FB: 
+            </a>
+
+        </div> 
+        
+
+    </body>
+</html>

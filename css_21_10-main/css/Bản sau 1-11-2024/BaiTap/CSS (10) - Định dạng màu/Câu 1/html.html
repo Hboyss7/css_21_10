@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>CSS (10) - Định dạng màu</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+
+      blockquote {
+        border: 4px dashed;
+
+        padding: 10px;
+
+        color: #508c19;
+
+        background-color: yellow;
+      }
+
+      .clip1 {
+        background-clip: border-box;
+      }
+
+      .clip2 {
+        background-clip: padding-box;
+        opacity: 0.5;
+      }
+
+      .clip3 {
+        background-clip: content-box;
+        opacity: 0.25;
+      }
+
+      p#doan1 {
+        color: gray;
+      }
+
+      p#doan2 {
+        color: rgb(200, 178, 230);
+      }
+
+      p#doan3 {
+        color: rgb(78%, 70%, 90%);
+      }
+
+      p#doan4 {
+        color: #c8b2e6;
+      }
+
+      p#doan5 {
+        color: rgba(200, 178, 230, 0.3);
+      }
+    </style>
+  </head>
+
+  <body>
+    <p id="doan1">Đây là ví dụ về màu chữ</p>
+
+    <p id="doan2">Màu RGB (Hệ 10)</p>
+
+    <p id="doan3">Màu RGB (Hệ %)</p>
+
+    <p id="doan4">Màu RGB (Hệ 16)</p>
+
+    <p id="doan5">Màu RGBA</p>
+
+    <blockquote class="clip1">
+      <p>Đây là ví dụ về màu chữ <em>(foreground color)</em></p>
+    </blockquote>
+
+    <blockquote class="clip2">
+      <p>Đây là ví dụ về background-clip từ padding-box</p>
+    </blockquote>
+
+    <blockquote class="clip3">
+      <p>Đây là ví dụ về background-clip từ content-box</p>
+    </blockquote>
+  </body>
+</html>
